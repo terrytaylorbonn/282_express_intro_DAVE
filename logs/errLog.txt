@@ -1,0 +1,1 @@
+20250107	12:26:41	0360d668-3daa-4732-a2c7-80da87fe1f0f	TypeError: logEvents is not a function
