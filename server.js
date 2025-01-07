@@ -3,18 +3,19 @@ const app = express();
 const path = require('path');
 const cors = require('cors');
 const { logger } = require('./middleware/logEvents');
-const errorHandler = require('./middleware/errorHandler');
+const  errorHandler  = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3500;
 
 // custom middleware logger
 app.use(logger);
 
 // Cross Origin Resource Sharing
-const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
+const whitelist = ['https://www.googlexxx.com', 'http://127.0.0.1:5500', 'http://localhostxxxx:3500'];
 const corsOptions = {
     origin: (origin, callback) => {
         if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
+        // if (whitelist.indexOf(origin) !== -1) {
+                callback(null, true)
         } else {
             callback(new Error('Not allowed by CORS'));
         }
@@ -75,6 +76,7 @@ const three = (req, res) => {
 app.get('/chain(.html)?', [one, two, three]);
 
 app.all('*', (req, res) => {
+    // res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
     res.status(404);
     if (req.accepts('html')) {
         res.sendFile(path.join(__dirname, 'views', '404.html'));
@@ -86,5 +88,10 @@ app.all('*', (req, res) => {
 });
 
 app.use(errorHandler);
+// app.use(function (err, req, res, next) {
+//     console.error(err.stack);
+//     res.status(500).send(err.message);
+// }       );
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -1,1 +1,6 @@
 20250107	12:26:41	0360d668-3daa-4732-a2c7-80da87fe1f0f	TypeError: logEvents is not a function
+20250107	13:38:15	240e48bc-3968-43a7-89b9-dccbbcd87f27	Error: Not allowed by CORS
+20250107	13:38:15	dcfdb24e-32d1-4f9b-a2e9-a3398a37b074	Error: Not allowed by CORS
+20250107	13:42:26	9e6f2a7f-5f6f-42ea-9133-6ec145096238	Error: Not allowed by CORS
+20250107	13:42:26	14c3b4ee-31b6-4d8d-941a-dc2e0e1da3f3	Error: Not allowed by CORS
+20250107	14:03:45	6bc5f321-293b-40d0-aa72-fe564daced22	Error: Not allowed by CORS
