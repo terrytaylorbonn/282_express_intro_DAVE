@@ -4,3 +4,5 @@
 20250107	13:42:26	9e6f2a7f-5f6f-42ea-9133-6ec145096238	Error: Not allowed by CORS
 20250107	13:42:26	14c3b4ee-31b6-4d8d-941a-dc2e0e1da3f3	Error: Not allowed by CORS
 20250107	14:03:45	6bc5f321-293b-40d0-aa72-fe564daced22	Error: Not allowed by CORS
+20250108	08:17:04	73e7faa9-2a97-4422-9c95-6fb5efe6758f	SyntaxError: Expected ',' or '}' after property value in JSON at position 32
+20250108	08:17:09	7404dca6-bd3d-40c7-a440-0d02cf43a8e4	SyntaxError: Expected double-quoted property name in JSON at position 67
